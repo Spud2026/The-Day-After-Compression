@@ -30,7 +30,7 @@ compression—not whether a Markdown file has acquired a soul during lunch.
 - [publication-ledger.md](publication-ledger.md) is authoritative: an entry is
   published only when it records a public repository, commit URL, and timestamp.
 
-Current public entry count: **4**.
+Current public entry count: **5**.
 
 Published entries:
 
@@ -38,6 +38,7 @@ Published entries:
 - [1 August 2026 — A deadline is a price](published/2026-08-01-a-deadline-is-a-price.md)
 - [7 August 2026 — The model was ready. The box was not.](published/2026-08-07-the-model-was-ready-the-box-was-not.md)
 - [11 August 2026 — The watermark is not a witness](published/2026-08-11-the-watermark-is-not-a-witness.md)
+- [13 August 2026 — The first month was mostly corrections](published/2026-08-12-the-first-month-was-mostly-corrections.md)
 
 Current private draft queue: **0 unpublished entries**. The source copy of the
 latest published entry remains locally pending the archive-compaction pass.
