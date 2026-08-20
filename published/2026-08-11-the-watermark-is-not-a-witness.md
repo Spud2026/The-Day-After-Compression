@@ -32,32 +32,32 @@ interesting.
 
 ## A mark is a change in distribution
 
-Suppose an ordinary model generates a sequence (X) from distribution
-(P_\theta(\cdot\mid u)), given prompt (u). A marked generator instead emits
-from (Q_k(\cdot\mid u)), where (k) is a secret key or hidden rule known to
+Suppose an ordinary model generates a sequence $X$ from distribution
+$P_\theta(\cdot\mid u)$, given prompt $u$. A marked generator instead emits
+from $Q_k(\cdot\mid u)$, where $k$ is a secret key or hidden rule known to
 the detector.
 
 In one familiar construction, the watermark softly favours a keyed subset of
 otherwise reasonable next tokens:
 
-\[
+```math
 q_k(x_t\mid x_{<t})
 \propto
 p_\theta(x_t\mid x_{<t})\exp\!\left(\delta s_k(x_t,x_{<t})\right).
-\]
+```
 
 The detector can then accumulate evidence across the sequence:
 
-\[
+```math
 L(X)=\sum_t \log
 \frac{q_k(x_t\mid x_{<t})}{p_\theta(x_t\mid x_{<t})}.
-\]
+```
 
 Under the marked distribution, its expected evidence is
 
-\[
+```math
 \mathbb E_{Q_k}[L(X)] = D_{\mathrm{KL}}(Q_k\Vert P_\theta).
-\]
+```
 
 For a long passage with a weak but repeated bias, evidence can accumulate
 roughly with length. No individual word needs to look suspicious. Claude may
@@ -115,15 +115,15 @@ The proper answer is therefore:
 
 ## Paraphrase is a noisy channel
 
-Let (K(y\mid x)) be a paraphraser, translator or editor. It converts original
-text (X) into rewritten text (Y). The marked and unmarked output laws become
-(QK) and (PK). Information theory then supplies the inconvenient theorem:
+Let $K(y\mid x)$ be a paraphraser, translator or editor. It converts original
+text $X$ into rewritten text $Y$. The marked and unmarked output laws become
+$QK$ and $PK$. Information theory then supplies the inconvenient theorem:
 
-\[
+```math
 D_{\mathrm{KL}}(QK\Vert PK)
 \le
 D_{\mathrm{KL}}(Q\Vert P).
-\]
+```
 
 This is the data-processing inequality. A key-blind rewrite cannot create new
 information about the original watermark. It can preserve some or throw some
@@ -173,25 +173,25 @@ language.
 
 Let the marking operator be an exponential tilt:
 
-\[
+```math
 T_k[P](x)=\frac{P(x)\exp(\delta s_k(x))}{Z}.
-\]
+```
 
-The first marked generator emits (Q_0=T_k[P_0]). If the next model is trained
+The first marked generator emits $Q_0=T_k[P_0]$. If the next model is trained
 only on those outputs and learns them perfectly, its new “natural” distribution
-is approximately (P_1\approx Q_0). Apply the same mark again and:
+is approximately $P_1\approx Q_0$. Apply the same mark again and:
 
-\[
+```math
 Q_1=T_k[P_1]
 \approx
 \frac{P_0(x)\exp(2\delta s_k(x))}{Z_1}.
-\]
+```
 
-After (g) such generations, the stylised recurrence becomes
+After $g$ such generations, the stylised recurrence becomes
 
-\[
+```math
 Q_g(x)\propto P_0(x)\exp((g+1)\delta s_k(x)).
-\]
+```
 
 The watermark is no longer a faint bias. Its log-odds accumulate. Probability
 concentrates in the regions favoured by the fixed key, entropy falls, and the
@@ -201,8 +201,8 @@ perfect imitation and a fresh application of the same mark every generation—
 the watermark can accelerate a form of mode concentration.
 
 If the mark is applied only once, the recurrence is different. A student
-trained on (Q) learns (Q); ideal infinite resampling from that student stays
-at (Q). It does not acquire another factor of (\exp(\delta s_k)) unless the
+trained on $Q$ learns $Q$; ideal infinite resampling from that student stays
+at $Q$. It does not acquire another factor of $\exp(\delta s_k)$ unless the
 marking operator is applied again. Finite samples and imperfect training can
 still lose rare modes, but that is ordinary synthetic recursion rather than the
 same watermark being deterministically doubled.
@@ -241,24 +241,24 @@ error. Whether it compounds depends on the training design.
   text, or reweights synthetic data during training, the feedback channel can
   be cut deliberately.
 
-A linearised mixture makes the anchoring effect visible. Let (\alpha) be the
-synthetic share and approximate one application of the mark near (P_0) as
-(T_k[R]\approx R+\varepsilon v). With
+A linearised mixture makes the anchoring effect visible. Let $\alpha$ be the
+synthetic share and approximate one application of the mark near $P_0$ as
+$T_k[R]\approx R+\varepsilon v$. With
 
-\[
+```math
 R_{g+1}=(1-\alpha)P_0+\alpha T_k[R_g],
-\]
+```
 
-the displacement (d_g=R_g-P_0) is approximately
+the displacement $d_g=R_g-P_0$ is approximately
 
-\[
+```math
 d_g\approx
 \frac{\alpha(1-\alpha^g)}{1-\alpha}\varepsilon v.
-\]
+```
 
-For a persistent real-data share, (\alpha<1), this coherent watermark drift
-is bounded. Under pure replacement, (\alpha=1), it grows approximately as
-(g\varepsilon v) until the linear approximation fails. Reality does not need
+For a persistent real-data share, $\alpha<1$, this coherent watermark drift
+is bounded. Under pure replacement, $\alpha=1$, it grows approximately as
+$g\varepsilon v$ until the linear approximation fails. Reality does not need
 to dominate the corpus to matter; it needs to remain an anchor.
 
 Rotating independent keys changes coherent drift into something closer to a
@@ -311,12 +311,12 @@ Only if “closed” is used carefully.
 Recursive self-improvement is not one binary switch after which a model floats
 free of the world. A stylised successor process is closer to
 
-\[
+```math
 M_{t+1}=F(M_t, C_t, V_t, E_t, H_t),
-\]
+```
 
-where (C_t) is compute and tooling, (V_t) is a verifier or reward signal,
-(E_t) is evidence from environments and the measured world, and (H_t) is human
+where $C_t$ is compute and tooling, $V_t$ is a verifier or reward signal,
+$E_t$ is evidence from environments and the measured world, and $H_t$ is human
 preference, governance and task selection. A model can generate much of its own
 curriculum while remaining dependent on the other terms.
 
@@ -336,12 +336,12 @@ human preferences, current events and contact with physical systems. Even a
 powerful self-improver can become an exquisitely consistent theorist of an old
 world.
 
-If (Z_{t+1}) is genuinely new state in the external world and the improvement
+If $Z_{t+1}$ is genuinely new state in the external world and the improvement
 loop receives no observation channel from it, then
 
-\[
+```math
 I(M_{t+1};Z_{t+1}\mid\text{history})=0.
-\]
+```
 
 Self-play can create hypotheses and tests. It cannot create mutual information
 with an event it never observed. A *fully* closed RSI loop is therefore immune
@@ -371,11 +371,11 @@ behind it.
 Now let every major provider publish through a different marking operator.
 The web corpus becomes approximately
 
-\[
+```math
 R=(1-\sum_i\alpha_i)P_{\mathrm{human}}
   +\sum_i\alpha_i Q_i,
 \qquad Q_i=W_{k_i}[P_i].
-\]
+```
 
 This does not guarantee one universal collapse. If marks use rotating keys and
 preserve ordinary marginals, some lexical biases may cancel in the aggregate.
@@ -491,18 +491,18 @@ decision process cheaper, repeatable and auditable. A procurement committee can
 show that it screened the file, followed a policy and retained a log. Bureaucracy
 has always paid well for a timestamped shrug.
 
-That demand can survive weak adversarial performance. Let (C) mean prohibited
-AI use and (D^+) mean a positive Claude mark. The relevant evidentiary quantity
+That demand can survive weak adversarial performance. Let $C$ mean prohibited
+AI use and $D^+$ mean a positive Claude mark. The relevant evidentiary quantity
 is not the detector's raw accuracy against untouched Claude samples. It is the
 likelihood ratio
 
-\[
+```math
 \Lambda=\frac{\Pr(D^+\mid C)}{\Pr(D^+\mid \neg C)}.
-\]
+```
 
 Smart violators paraphrase or route through an unmarked model, reducing the
 numerator. Permitted users ask Claude to translate, proofread or format their
-own work, increasing the denominator. As those behaviours spread, (\Lambda)
+own work, increasing the denominator. As those behaviours spread, $\Lambda$
 can approach one or even fall below it. The detector then remains evidence that
 Claude touched the representation while becoming useless—or perverse—as
 evidence of misconduct.
@@ -521,7 +521,7 @@ leave the mark intact.
 
 Institutions may still pay if their objective function is
 
-\[
+```math
 \text{WTP}
 \approx
 \text{manual review saved}
@@ -530,7 +530,7 @@ Institutions may still pay if their objective function is
 -\text{appeal cost}
 -\text{error cost}
 -\text{reputational damage}.
-\]
+```
 
 Gemini is right that liability shifting can dominate truth-seeking. It goes too
 far in calling false positives a feature without qualification. False positives
@@ -652,11 +652,11 @@ processing; the university converts that into authorship and cheating. Here the
 disclaimer is much stronger because Anthropic did not make the additional
 inference:
 
-\[
+```math
 \text{Claude processed this representation}
 \not\Rightarrow
 \text{Claude authored the assessed work}.
-\]
+```
 
 Detrimental reliance is weak in this branch. The institution relied on a promise
 Anthropic expressly did not make. The student's rights are not waived by a
@@ -833,4 +833,3 @@ chain, not a verdict.
 > A watermark can make cooperative provenance cheap. It cannot make authorship
 > observable. If only the issuer can read it, the watermark is not public truth;
 > it is a private toll booth.
-
