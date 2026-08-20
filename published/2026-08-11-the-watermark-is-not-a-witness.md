@@ -41,16 +41,16 @@ In one familiar construction, the watermark softly favours a keyed subset of
 otherwise reasonable next tokens:
 
 ```math
-q_k(x_t\mid x_{<t})
+q_k(x_t\mid x_{\lt t})
 \propto
-p_\theta(x_t\mid x_{<t})\exp\!\left(\delta s_k(x_t,x_{<t})\right).
+p_\theta(x_t\mid x_{\lt t})\exp\!\left(\delta s_k(x_t,x_{\lt t})\right).
 ```
 
 The detector can then accumulate evidence across the sequence:
 
 ```math
 L(X)=\sum_t \log
-\frac{q_k(x_t\mid x_{<t})}{p_\theta(x_t\mid x_{<t})}.
+\frac{q_k(x_t\mid x_{\lt t})}{p_\theta(x_t\mid x_{\lt t})}.
 ```
 
 Under the marked distribution, its expected evidence is
