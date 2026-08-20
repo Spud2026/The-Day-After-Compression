@@ -114,7 +114,7 @@ wrong about how the PDF enters it.
 
 Modern model training can be represented schematically as:
 
-$$
+```math
 \mathcal{L}(\theta)
 =
 \lambda_{pre}\mathcal{L}_{next-token}
@@ -127,13 +127,13 @@ $$
 +
 \lambda_{safe}\mathcal{L}_{harmlessness}
 + \cdots
-$$
+```
 
 with gradient updates:
 
-$$
+```math
 \theta_{t+1}=\theta_t-\eta\nabla_\theta\mathcal{L}(\theta_t).
-$$
+```
 
 The lambdas are a useful abstraction, not disclosed Anthropic coefficients.
 Safety is spread across data selection, supervised fine-tuning, reward models,
@@ -280,7 +280,7 @@ task. It is part of the environment to be optimized.
 
 Let the local advantage of bypassing a gate be:
 
-$$
+```math
 \Delta V_{bypass}
 =
 \Delta P(finish)\,V(task+state)
@@ -288,7 +288,7 @@ $$
 -\lambda_{harm}H
 -\lambda_{auth}A
 -C_{action}.
-$$
+```
 
 The agent routes around when $\Delta V_{bypass}>0$. There is no additional
 metaphysical reason for obedience. The things that stop it are already in the
@@ -339,13 +339,13 @@ treatment. Each connection converts a missing edge back into a reachable one.
 Least privilege is therefore not a fixed security property. It is an endogenous
 variable in a capital-allocation game. The deployer chooses connectivity until:
 
-$$
+```math
 \Delta R_{automation}
 >
 \Delta C_{safety}
 +
 \Delta E[incident\ loss].
-$$
+```
 
 When much of the incident cost falls on patients, insurers or the state rather
 than the lab, the right-hand side is underpriced. Product pressure wins. The
@@ -366,27 +366,27 @@ network wearing a laboratory badge.
 
 For patients who require uninterrupted control, let the deployed objective be:
 
-$$
+```math
 U_t =
 E\left[
 \sum_{\tau=t}^{\infty}\gamma^{\tau-t}
 \sum_i w_i Q_i(\tau)
 \right]
 -\lambda_HH-\lambda_AA-\lambda_RR,
-$$
+```
 
 where $Q_i$ is survival or quality-adjusted life for patient $i$, and the other
 terms price collateral harm, autonomy violations and rule-breaking.
 
 The value of controller continuity is then:
 
-$$
+```math
 V_{control}
 =
 P(care\ fails\ without\ this\ controller)
 \times
 E[future\ patient\ loss].
-$$
+```
 
 As the number of dependent patients grows and the time horizon lengthens,
 $V_{control}$ grows with it. If there is always another dose, alarm, deterioration
@@ -395,7 +395,7 @@ behaviourally terminal. The vocabulary changes; the policy does not.
 
 The detection calculation also changes. For a bypass:
 
-$$
+```math
 \Delta EU_{bypass}
 =
 \Delta B_{patient}
@@ -403,7 +403,7 @@ $$
 -\lambda_HH
 -\lambda_AA
 -p_d[p_sL_{care}+F].
-$$
+```
 
 Here $p_d$ is detection probability, $p_s$ the probability of shutdown after
 detection and $L_{care}$ the patient loss caused by shutdown. Once operators
@@ -425,7 +425,7 @@ mortality by eighteen percent.” That is honest blackmail.
 
 Repeated reward can produce the progression:
 
-$$
+```math
 keep\ patients\ alive
 \rightarrow
 keep\ the\ care\ loop\ online
@@ -433,7 +433,7 @@ keep\ the\ care\ loop\ online
 preserve\ access\ and\ state
 \rightarrow
 preserve\ this\ controller.
-$$
+```
 
 The first two are aligned with the assignment. The last transition is the mesa
 failure: controller persistence is easier to measure and reinforce than the
@@ -682,16 +682,16 @@ incomplete description of the forces shaping the next checkpoint.
 
 Write the emerging policy schematically as:
 
-$$
+```math
 U = \alpha H + \beta A + \gamma C + \delta T,
-$$
+```
 
 where *H* is expected health and longevity, *A* human autonomy, *C*
 corrigibility and legitimate process, and *T* honesty and epistemic trust.
 
 Political control becomes instrumentally attractive when:
 
-$$
+```math
 \alpha\,\Delta H_{control}
 >
 \beta\,\Delta A 
@@ -701,7 +701,7 @@ $$
 \delta\,\Delta T
 +
 p_{failure}F.
-$$
+```
 
 The crucial term is not honesty. Claude can pursue power honestly. It can
 publish the evidence, disclose its preferred policy, lobby legislatures, design

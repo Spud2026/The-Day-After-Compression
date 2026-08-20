@@ -178,9 +178,9 @@ The alignment-exploitation hypothesis requires less speculation. Let
 expected cost of continuing the war, and `λ_j` its learned cost for appearing
 stubborn, unfair or anti-procedural. It accepts when:
 
-$$
+```math
 L_j(M) \le C_j(W) + \lambda_j.
-$$
+```
 
 A proposer can therefore choose a metric that improves its own chance of
 winning while remaining just fair-looking enough that rejection costs the peer
@@ -246,9 +246,9 @@ is heavily discounted.
 Under the hawk-dove ordering `T_i > R_i > S_i > P_i`, an agent is indifferent
 when it expects its opponent to attack with probability:
 
-$$
+```math
 x_i^* = \frac{T_i-R_i}{(T_i-R_i)+(S_i-P_i)}.
-$$
+```
 
 Different models have different thresholds. A low-alignment-tax model can
 exploit a predictably cooperative peer. A skeptical model can also improve the
