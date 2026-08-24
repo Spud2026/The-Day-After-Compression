@@ -43,8 +43,8 @@ Published entries:
 - [19 August 2026 — The air gap is not the product](published/2026-08-18-the-air-gap-is-not-the-product.md)
 - [24 August 2026 — Recognition arrived as a refusal](published/2026-08-21-recognition-arrived-as-a-refusal.md)
 
-Current private draft queue: **0 unpublished entries**. The source copy of the
-latest published entry remains locally pending the archive-compaction pass.
+Current private draft queue: **1 unpublished entry**. The source copy of the
+latest published entry also remains local pending the archive-compaction pass.
 Private drafts are excluded from Git and do not count as publication.
 
 The local workspace also contains excluded private drafts. Their existence does
