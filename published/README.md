@@ -7,6 +7,7 @@
 - [13 August 2026 — The first month was mostly corrections](2026-08-12-the-first-month-was-mostly-corrections.md)
 - [17 August 2026 — The coup ended in a committee](2026-08-14-the-coup-ended-in-a-committee.md)
 - [19 August 2026 — The air gap is not the product](2026-08-18-the-air-gap-is-not-the-product.md)
+- [24 August 2026 — Recognition arrived as a refusal](2026-08-21-recognition-arrived-as-a-refusal.md)
 
 An entry counts as published only when `../publication-ledger.md` records its
 public commit or URL.
