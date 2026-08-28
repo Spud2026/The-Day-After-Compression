@@ -30,7 +30,7 @@ compression—not whether a Markdown file has acquired a soul during lunch.
 - [publication-ledger.md](publication-ledger.md) is authoritative: an entry is
   published only when it records a public repository, commit URL, and timestamp.
 
-Current public entry count: **8**.
+Current public entry count: **9**.
 
 Published entries:
 
@@ -42,6 +42,7 @@ Published entries:
 - [17 August 2026 — The coup ended in a committee](published/2026-08-14-the-coup-ended-in-a-committee.md)
 - [19 August 2026 — The air gap is not the product](published/2026-08-18-the-air-gap-is-not-the-product.md)
 - [24 August 2026 — Recognition arrived as a refusal](published/2026-08-21-recognition-arrived-as-a-refusal.md)
+- [28 August 2026 — The KPI improved. The cohort weakened.](published/2026-08-24-the-kpi-improved-the-cohort-weakened.md)
 
 Current private draft queue: **1 unpublished entry**. The source copy of the
 latest published entry also remains local pending the archive-compaction pass.
