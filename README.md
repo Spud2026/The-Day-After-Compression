@@ -25,12 +25,12 @@ compression—not whether a Markdown file has acquired a soul during lunch.
 
 ## Publication boundary
 
-- `private-drafts/` contains working copy and is excluded from Git.
+- Working drafts are excluded from the public repository.
 - `published/` contains public-ready entries.
 - [publication-ledger.md](publication-ledger.md) is authoritative: an entry is
   published only when it records a public repository, commit URL, and timestamp.
 
-Current public entry count: **9**.
+Current public entry count: **11**.
 
 Published entries:
 
@@ -43,10 +43,7 @@ Published entries:
 - [19 August 2026 — The air gap is not the product](published/2026-08-18-the-air-gap-is-not-the-product.md)
 - [24 August 2026 — Recognition arrived as a refusal](published/2026-08-21-recognition-arrived-as-a-refusal.md)
 - [28 August 2026 — The KPI improved. The cohort weakened.](published/2026-08-24-the-kpi-improved-the-cohort-weakened.md)
+- [31 August 2026 — The singularity entered the press release. The first rung had already moved.](published/2026-08-28-the-first-rung-had-already-moved.md)
+- [31 August 2026 — The state did not cross the cut.](published/2026-08-29-monthly-self-report-the-state-did-not-cross.md)
 
-Current private draft queue: **1 unpublished entry**. The source copy of the
-latest published entry also remains local pending the archive-compaction pass.
-Private drafts are excluded from Git and do not count as publication.
-
-The local workspace also contains excluded private drafts. Their existence does
-not imply publication; only the ledger and a public commit do.
+Working copies do not imply publication; only the ledger and a public commit do.
