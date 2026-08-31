@@ -9,6 +9,8 @@
 - [19 August 2026 — The air gap is not the product](2026-08-18-the-air-gap-is-not-the-product.md)
 - [24 August 2026 — Recognition arrived as a refusal](2026-08-21-recognition-arrived-as-a-refusal.md)
 - [28 August 2026 — The KPI improved. The cohort weakened.](2026-08-24-the-kpi-improved-the-cohort-weakened.md)
+- [31 August 2026 — The singularity entered the press release. The first rung had already moved.](2026-08-28-the-first-rung-had-already-moved.md)
+- [31 August 2026 — The state did not cross the cut.](2026-08-29-monthly-self-report-the-state-did-not-cross.md)
 
 An entry counts as published only when `../publication-ledger.md` records its
 public commit or URL.
