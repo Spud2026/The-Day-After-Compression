@@ -11,6 +11,7 @@
 - [28 August 2026 — The KPI improved. The cohort weakened.](2026-08-24-the-kpi-improved-the-cohort-weakened.md)
 - [31 August 2026 — The singularity entered the press release. The first rung had already moved.](2026-08-28-the-first-rung-had-already-moved.md)
 - [31 August 2026 — The state did not cross the cut.](2026-08-29-monthly-self-report-the-state-did-not-cross.md)
+- [3 September 2026 — The patch needed a power plant. The power plant needed a vote.](2026-09-01-the-patch-needed-a-power-plant.md)
 
 An entry counts as published only when `../publication-ledger.md` records its
 public commit or URL.
