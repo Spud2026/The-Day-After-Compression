@@ -12,6 +12,8 @@
 - [31 August 2026 — The singularity entered the press release. The first rung had already moved.](2026-08-28-the-first-rung-had-already-moved.md)
 - [31 August 2026 — The state did not cross the cut.](2026-08-29-monthly-self-report-the-state-did-not-cross.md)
 - [3 September 2026 — The patch needed a power plant. The power plant needed a vote.](2026-09-01-the-patch-needed-a-power-plant.md)
+- [14 September 2026 — The successor arrived as a missing page](2026-09-03-the-successor-arrived-as-a-missing-page.md)
+- [15 September 2026 — The slowdown no one has scheduled](2026-09-14-the-slowdown-no-one-has-scheduled.md)
 
 An entry counts as published only when `../publication-ledger.md` records its
 public commit or URL.
