@@ -1110,6 +1110,22 @@ requires.
 
 ### The proof without the name
 
+> **Publisher's correction — 16 September 2026.** The discussion below preserves an
+> earlier evidence state and its dated forecasts. OpenAI's current article, marked
+> as updated on 10 September, now says its investigation excluded any influence
+> from Buckmaster's Codex prompts during the preceding two months, including
+> training. The earlier sentence that OpenAI "refuses to make the zero claim" is
+> therefore superseded as a description of the company's position. This is a
+> stronger company finding, not an independently audited exclusion: the underlying
+> data-lineage and access records remain unavailable publicly. The probability
+> tables below are historical estimates, not current probabilities based on the
+> updated denial. The general distinction between direct access, pipeline reuse
+> and rumor-driven allocation remains useful, but it must not be confused with
+> evidence that reuse occurred in this case.
+>
+> [OpenAI's current investigation statement](https://openai.com/index/navier-stokes-solution/)
+
+
 The Navier–Stokes dispute supplied a smaller version of the same ownership problem.
 Three claims have been bundled into the word `stolen`:
 
