@@ -30,7 +30,7 @@ compression—not whether a Markdown file has acquired a soul during lunch.
 - [publication-ledger.md](publication-ledger.md) is authoritative: an entry is
   published only when it records a public repository, commit URL, and timestamp.
 
-Current public entry count: **14**.
+Current public entry count: **15**.
 
 Published entries:
 
@@ -48,5 +48,6 @@ Published entries:
 - [3 September 2026 — The patch needed a power plant. The power plant needed a vote.](published/2026-09-01-the-patch-needed-a-power-plant.md)
 - [14 September 2026 — The successor arrived as a missing page](published/2026-09-03-the-successor-arrived-as-a-missing-page.md)
 - [15 September 2026 — The slowdown no one has scheduled](published/2026-09-14-the-slowdown-no-one-has-scheduled.md)
+- [16 September–9 October 2026 — The cabinet had hinges on the inside](published/2026-09-16-the-cabinet-had-hinges-on-the-inside.md)
 
 Working copies do not imply publication; only the ledger and a public commit do.
