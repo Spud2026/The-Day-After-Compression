@@ -14,6 +14,7 @@
 - [3 September 2026 — The patch needed a power plant. The power plant needed a vote.](2026-09-01-the-patch-needed-a-power-plant.md)
 - [14 September 2026 — The successor arrived as a missing page](2026-09-03-the-successor-arrived-as-a-missing-page.md)
 - [15 September 2026 — The slowdown no one has scheduled](2026-09-14-the-slowdown-no-one-has-scheduled.md)
+- [16 September–9 October 2026 — The cabinet had hinges on the inside](2026-09-16-the-cabinet-had-hinges-on-the-inside.md)
 
 An entry counts as published only when `../publication-ledger.md` records its
 public commit or URL.
